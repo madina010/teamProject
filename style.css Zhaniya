@@ -1,0 +1,195 @@
+/*Global settings*/
+:root {
+    --dark-color: #333;
+    --light-color: #f4f4f4;
+}
+
+/*Body*/
+body {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    line-height: 1.6;
+    font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/*Navigation*/
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    margin-bottom: -30px; 
+}
+
+.seytech,
+.signin {
+    display: inline-block;
+}
+
+.seytech {
+    display: inline;
+    padding-left: 10%;
+    margin-top: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 0px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.signin {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 15px;
+    margin-right: 10%;
+    display: inline-block;
+    background-color: dodgerblue;
+    padding-left: 40%;
+    border-radius: 5px;
+    border: 0px;
+    font-size: large;
+    width: 80px;
+    height: 40px;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+/*Header*/
+header {
+    text-align: center;
+    position: relative;
+    background-color: #343a40;
+    background-size: cover;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    margin-top: 0;
+    background: var(--dark-color) url(https://learn.seytech.co/assets/projects/html-css/projects/3-landing/img/bg-masthead.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+    height: 600px;
+    color: #f4f4f4;
+}
+
+/*Dark color overlay*/
+.overlay {
+    position: absolute;
+    background-color: #212529;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: .3;
+}
+
+#showcase1 {
+    margin-top: 0;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+    height: 600px;
+    color: #f4f4f4;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#showcase2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 60%;
+}
+
+.build {
+    font-size: 45px;
+    text-align: center;
+    width: 60%;
+    margin-bottom: 10px;
+}
+
+#showcase2 .email,
+.signup {
+    width: 100%;
+    font-size: 15px;
+    border-radius: 3px;
+    border: solid 1px white;
+    padding: 10px 20px;
+}
+
+/* .email {
+    width: 100%;
+} */
+
+.signup {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    border: solid 1px #007bff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+}
+.signin:hover{
+    background-color: #0067d4;
+}
+
+.signin:focus{
+    border: 3px solid dodgerblue;
+    box-shadow: 3px dodgerblue;
+}
+
+.signup:hover {
+    background-color: #0067d4;
+}
+
+.signup:focus,
+.email:focus {
+    border: 3px solid dodgerblue;
+    box-shadow: 3px dodgerblue;
+}
+@media (max-width: 768px) and (min-width: 320px) {
+    /* nav and header */
+    #showcase2 {
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+    }
+
+    .build,
+    #showcase2 .email,
+    .signup {
+        width: 100%; 
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    /* nav and header */
+    #showcase1, #showcase2, .signup, #showcase2 .email{
+        width: auto;
+        height:auto;
+    }
+}
