@@ -1,3 +1,3 @@
 # teamProject
 
-hello wrold
+hello world
