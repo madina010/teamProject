@@ -255,7 +255,7 @@ header {
 }
 
 .signup:focus,
-.email:focus {
+#showcase2 .email:focus {
     border: 3px solid dodgerblue;
     box-shadow: 3px dodgerblue;
 }
@@ -356,7 +356,6 @@ img {
 
 
 /* section fourth */
-
 .showcase11 {
     background-image: url('https://www.kinesis.ie/gfx/layout/kinesis-screen-bg-masthead.jpg') ;
     background-size: cover;
@@ -385,19 +384,16 @@ img {
     width: 100%;
 }
 
-
 .submit {
     background-color: #007bff;
     color: white;
     border-radius: 5px;
     border: solid 1px #007bff;
     width: 25%;
-    height: auto;
+    height: 3em;
     font-size: 15px;
     font-weight: 600;
-    padding: 1em;
 }
-
 
 .submit:hover {
     background-color: #0067d4;
@@ -405,7 +401,6 @@ img {
 }
 
 /* footer */
-
 #href ul li {
     display: inline-flex;  
 }
@@ -413,15 +408,13 @@ img {
 #href {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 40px;
 }
 
 #href a{
     color: #0067d4;
     text-decoration: none;
-    max-width: 1280px;
-    margin: 0 auto;
 }
 
 ul .nav {
@@ -442,11 +435,15 @@ ul .nav {
     color:#000;
 }
 
+footer .container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
 .social-icons {
     font-size: 28px;
     display: flex;
     gap: 40px;
-    margin-right: 3em;
 }
 
 .fa-instagram:hover {
@@ -464,9 +461,9 @@ ul .nav {
 .text {
     background-color: #ffffff;
     color: rgb(143, 122, 126);
-    margin-left: 25em;
+    margin-left: 200px;
     margin-top: -12px;
-    font-size: 1em;
+    font-size: 15px;
 }
 
 @media (max-width: 768px) and (min-width: 320px) {
@@ -615,9 +612,5 @@ ul .nav {
 
     .text {
         text-align: center;
-    }
-
-    .op {
-        max-width: 190px;
     }
 }
