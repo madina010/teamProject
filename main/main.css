@@ -316,8 +316,10 @@ img {
     height: auto;
 }
 
-h2,
-p {
+.right h2,
+.left h2,
+.right p,
+.left p {
     color: #333;
     margin: 40px;
     padding: 40px;
