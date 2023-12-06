@@ -1,0 +1,188 @@
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color:#ffffff;
+    line-height: 1.6;
+}
+#showcase11 {
+    background-image: url(https://www.kinesis.ie/gfx/layout/kinesis-screen-bg-masthead.jpg) ;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+    height: 330px;
+    color: #f4f4f4;
+}
+
+.showcase12 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 40%;
+}
+
+@media (max-width: 768px) and (min-width: 320px) {
+    .showcase11 h1 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .showcase12 {
+        flex-direction: column;
+        /* background-color: blue; */
+        width: 90%;
+    }
+
+    .submit {
+        width: 100% !important;
+    }
+
+    .email {
+        /* margin: 0 40px; */
+        width: 85% !important;
+    }
+
+    .header-text {
+        text-align: center;
+        
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .nav {
+        padding: 0;
+        width: 100% !important;
+        font-size: 14px;
+        max-width: 95%;
+        margin: 0 auto;
+        margin-left: 80px;
+    }
+
+    .social-icons {
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+       
+    }
+
+    #href {
+        align-items: start !important;
+      
+    }
+  
+    .text {
+        /* margin: 0 !important; */
+        width: 75%;
+        max-width: 75%;
+        /* margin: 0 auto !important; */
+        margin-left: 11px !important;
+        margin-right: auto !important;
+        margin-top: -70px !important;
+        margin-bottom: 0 !important;
+        
+    }
+}
+
+.email {
+    font-size: 15px;
+    border-radius: 3px;
+    border: solid 1px white;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.submit {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    border: solid 1px #007bff;
+    width: 25%;
+    height: 5vh;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.submit:hover {
+    background-color: #0067d4;
+    cursor: pointer;
+}
+
+#href ul li {
+    display: inline-flex;  
+}
+
+#href {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+#href a{
+    color: #0067d4;
+    text-decoration: none;
+}
+
+.nav {
+    gap: 15px;
+    width: 50%;
+    display: flex;
+}
+
+.facebook img {
+    max-width: 20px;
+}
+
+.facebook:hover{
+    cursor: pointer;
+}
+
+.dot {
+    color:#000;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.social-icons {
+    font-size: 28px;
+    display: flex;
+    gap: 40px;
+}
+
+.fa-instagram:hover {
+    color: #0d3e74;
+}
+
+.fa-facebook:hover {
+    color:#0d3e74;
+}
+
+.fa-twitter:hover {
+    color: #0d3e74;
+}
+
+.text {
+    background-color: #ffffff;
+    color: rgb(143, 122, 126);
+    margin-left: 200px;
+    margin-top: -12px;
+    font-size: 15px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .howcase12 .showcase11 h1 .submit .email .header-text {
+        height: auto;
+    }
+}
+

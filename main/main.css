@@ -1,0 +1,616 @@
+/* Global Settings */
+:root {
+    --dark-color: #212529;
+    --light-color: #fff;
+    --blue-color: #007bff;
+}
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+footer,
+main,
+nav,
+section {
+    display: block;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #ffff;
+    line-height: 1.6;
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.h5,
+h5 {
+    font-size: 1.25rem;
+}
+
+.h3, h3 {
+    font-size: 1.75rem;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 5em 0;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.m-autho {
+    margin: auto !important;
+}
+
+.flex {
+    display: flex !important;
+}
+
+.text-primary {
+    color: var(--blue-color);
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+.mb-5 {
+    margin-bottom: 3em !important;
+}
+
+.mb-3 {
+    margin-bottom: 1em !important;
+}
+
+.mb-lg-0 {
+    margin-bottom: 0!important;
+}
+
+.mb-lg-3 {
+    margin-bottom: 1em!important;
+}
+
+.ml-autho,
+.mx-autho {
+    margin-left: auto!important;
+}
+
+.mr-autho,
+.mx-autho {
+    margin-right: auto!important;
+}
+
+/*Navigation*/
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.seytech,
+.signin {
+    display: inline-block;
+}
+
+.seytech {
+    display: inline;
+    padding-left: 10%;
+    margin-top: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 0px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.signin {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 15px;
+    margin-right: 10%;
+    display: inline-block;
+    background-color: dodgerblue;
+    padding-left: 40%;
+    border-radius: 5px;
+    border: 0px;
+    font-size: large;
+    width: 80px;
+    height: 40px;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+/*Header*/
+header {
+    text-align: center;
+    position: relative;
+    background-color: #343a40;
+    background-size: cover;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    margin-top: 0;
+    background: var(--dark-color) url(https://learn.seytech.co/assets/projects/html-css/projects/3-landing/img/bg-masthead.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+    height: 600px;
+    color: #f4f4f4;
+}
+
+/*Dark color overlay*/
+.overlay {
+    position: absolute;
+    background-color: #212529;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: .3;
+}
+
+#showcase1 {
+    margin-top: 0;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+    height: 600px;
+    color: #f4f4f4;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#showcase2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 60%;
+}
+
+.build {
+    font-size: 45px;
+    text-align: center;
+    width: 60%;
+    margin-bottom: 10px;
+}
+
+#showcase2 .email,
+.signup {
+    width: 100%;
+    font-size: 15px;
+    border-radius: 3px;
+    border: solid 1px white;
+    padding: 10px 20px;
+}
+
+/* .email {
+    width: 100%;
+} */
+
+.signup {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    border: solid 1px #007bff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+}
+.signin:hover{
+    background-color: #0067d4;
+}
+
+.signin:focus{
+    border: 3px solid dodgerblue;
+    box-shadow: 3px dodgerblue;
+}
+
+.signup:hover {
+    background-color: #0067d4;
+}
+
+.signup:focus,
+#showcase2 .email:focus {
+    border: 3px solid dodgerblue;
+    box-shadow: 3px dodgerblue;
+}
+
+/* section first */
+.row {
+    display: flex;
+    justify-content: center;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.col {
+    position: relative;
+    width: 20%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.section-first {
+    padding-top: 7em;
+    padding-bottom: 7em;
+}
+
+.section-first .icons-item {
+    max-width: 20em;
+    margin: 0 auto;
+}
+
+.section-first .icons-item .icons {
+    height: 10em;
+}
+
+.section-first .icons-item .icons i {
+    font-size: 6em;
+    transition: transform 0.3s ease-in-out;
+}
+
+.section-first .icons-item:hover .icons i {
+    transform: scale(1.2);
+}
+
+.op {
+    font-size: 1.25em;
+    font-weight: 300!important;
+}
+
+/* section second */ 
+.gallery .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.right h2,
+.left h2,
+.right p,
+.left p {
+    color: #333;
+    margin: 40px;
+    padding: 40px;
+}
+
+.right,
+.left {
+    flex: 1;
+}
+
+/* section third  */
+
+.testimonials {
+    padding-top: 7em;
+    padding-bottom: 7em;
+}
+
+.font-weight-light {
+    font-weight: 300!important;
+}
+
+.testimonials .testimonial-item img {
+    max-width: 12em;
+    box-shadow: 0 5px 5px 0 #adb5bd;
+}
+
+.rounded-circle {
+    border-radius: 50% !important;
+}
+
+.icon-xl {
+    font-size: 72px !important;
+}
+
+
+/* section fourth */
+.showcase11 {
+    background-image: url('https://www.kinesis.ie/gfx/layout/kinesis-screen-bg-masthead.jpg') ;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+    height: 330px;
+    color: #f4f4f4;
+}
+
+.showcase12 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 40%;
+}
+
+.showcase12 .email {
+    font-size: 15px;
+    border-radius: 3px;
+    border: solid 1px white;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.submit {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    border: solid 1px #007bff;
+    width: 25%;
+    height: 3em;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.submit:hover {
+    background-color: #0067d4;
+    cursor: pointer;
+}
+
+/* footer */
+#href ul li {
+    display: inline-flex;  
+}
+
+#href {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+#href a{
+    color: #0067d4;
+    text-decoration: none;
+}
+
+ul .nav {
+    gap: 15px;
+    width: 50%;
+    display: flex;
+}
+
+.facebook img {
+    max-width: 20px;
+}
+
+.facebook:hover{
+    cursor: pointer;
+}
+
+.dot {
+    color:#000;
+}
+
+footer .container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.social-icons {
+    font-size: 28px;
+    display: flex;
+    gap: 40px;
+}
+
+.fa-instagram:hover {
+    color: #0d3e74;
+}
+
+.fa-facebook:hover {
+    color:#0d3e74;
+}
+
+.fa-twitter:hover {
+    color: #0d3e74;
+}
+
+.text {
+    background-color: #ffffff;
+    color: rgb(143, 122, 126);
+    margin-left: 200px;
+    margin-top: -12px;
+    font-size: 15px;
+}
+
+@media (max-width: 768px) and (min-width: 320px) {
+    /* nav and header */
+    #showcase2 {
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+    }
+
+    .build,
+    #showcase2 .email,
+    .signup {
+        width: 100%; 
+    }
+
+    /* section1 and aection3 */
+    .row {
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .col {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .section-first .icons-item {
+        max-width: 97%;
+    }
+
+    .section-first .icons-item .icons {
+        height: auto;
+    }
+
+    /* section4 and footer */
+
+    .showcase11 h1 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .showcase12 {
+        flex-direction: column;
+        /* background-color: blue; */
+        width: 90%;
+    }
+
+    .submit {
+        width: 92% !important;
+        padding: 1em;
+    }
+
+    .showcase12 .email {
+        /* margin: 0 40px; */
+        width: 85% !important;
+    }
+
+    .header-text {
+        text-align: center;
+        
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    ul .nav {
+        padding: 0;
+        width: 100% !important;
+        font-size: 14px;
+        max-width: 95%;
+        margin: 0 8em;
+        /* margin-left: 80px; */
+    }
+
+    .social-icons {
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #href {
+        align-items: start !important;
+    }
+  
+    .text {
+        /* margin: 0 !important; */
+        width: 75%;
+        max-width: 75%;
+        /* margin: 0 auto !important; */
+        margin-left: 113px !important;
+        margin-right: auto !important;
+        margin-top: -70px !important;
+        margin-bottom: 0 !important;
+        
+    }
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    /* nav and header */
+    #showcase1, #showcase2, .signup, #showcase2 .email{
+        width: auto;
+        height:auto;
+    }
+
+    /* section1 and section3 */
+    .section-first .icons-item .icons i {
+        height: auto;
+    }
+
+    .row {
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .col {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .section-first .icons-item {
+        max-width: 90%;
+    }
+
+    /* section2 */
+    /* .gallery .container {
+        flex-direction: column;
+    } */
+
+    /* section4 and footer */
+    .showcase12, .showcase11, .showcase11 h1, .submit, .showcase12 .email, .header-text {
+        height: auto;
+    }   
+
+    .submit {
+        width: 60%;
+        padding: 1em;
+    }
+
+    .text {
+        text-align: center;
+    }
+}
